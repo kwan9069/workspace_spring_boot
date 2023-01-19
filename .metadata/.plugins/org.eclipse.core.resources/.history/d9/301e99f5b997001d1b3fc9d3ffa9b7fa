@@ -1,0 +1,18 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages="com.example.demo")
+@ComponentScan(basePackages="upload")
+@ComponentScan(basePackage="spring.mybatis_15")
+@MapperScan(basePackages="spring.mybatis_15")
+public class SecondApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SecondApplication.class, args);
+	}
+
+}
