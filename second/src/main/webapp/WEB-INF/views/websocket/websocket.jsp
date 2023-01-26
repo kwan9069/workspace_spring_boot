@@ -22,7 +22,7 @@
 $(function(){
 	var websocket;
 	$("#enterbtn").on('click', function(){
-		websocket = new WebSocket("ws://localhost:8086/ws");
+		websocket = new WebSocket("ws://localhost:8085/ws");
 		websocket.onopen = open;
 		websocket.onclose = close;
 		websocket.onmessage = message;//서버가 응답한 내용 수신
